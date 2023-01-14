@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left-logo">
+          <a href="./index.html" id="logo1">GovCour</a>
+        </div>
+        <div class="right-side">
+          <div class="links">
+            <a href="#">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#">About Us</a>
+          </div>
+          <div class="buttons">
+            <a href="./register.html" id="signup">Get Started</a>
+          </div>
+        </div>
+      </nav>
+      <div class="login">
+        <h1>Login in</h1>
+        <p>Login to manage your account</p>
+        <div class="form">
+          <div class="username">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" spellcheck="false" />
+            <span>Username</span>
+          </div>
+          <div class="password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" spellcheck="false" />
+            <span>Password</span>
+          </div>
+        </div>
+        <button id="forget">Forget password?</button>
+        <button id="log">Login</button>
+        <p id="regis">
+          Not registered yet?<a href="./register.html">Create an Acoount</a>
+        </p>
+      </div>
+    </header>
+    <div class="model">
+      <i class="fa-solid fa-xmark"></i>
+      <div class="container">
+        <h1>Enter Your Details</h1>
+        <div class="row">
+          <div class="second-column">
+            <span>Username</span>
+            <input type="text" spellcheck="false" required />
+          </div>
+          <div class="second-column">
+            <span>Email</span>
+            <input type="email" spellcheck="false" required />
+          </div>
+          <div class="second-column">
+            <span>Old Password</span>
+            <input type="password" spellcheck="false" required />
+          </div>
+          <div class="second-column">
+            <span>New Password</span>
+            <input type="password" spellcheck="false" required />
+          </div>
+        </div>
+        <button id="continue">Continue</button>
+      </div>
+    </div>
+    <script>
+      const forget = document.querySelector("#forget")
+      const model_cross = document.querySelector(".model i");
+      const model = document.querySelector(".model");
+      forget.addEventListener("click", () => {
+        model.style.display = "grid";
+      });
+      model_cross.addEventListener("click", () => {
+        model.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #d0e3ef;
+}
+
+button,
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav,
+.right-side,
+.links,
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* header  */
+header {
+    background-image: url(./inline_image_preview.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+/* nav  */
+nav {
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212121;
+    z-index: 1111;
+}
+
+/* leftside nav  */
+nav .left-logo #logo1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* right side nav  */
+nav .right-side ,.links {
+    gap: 2rem;
+}
+
+.links a,.buttons #login {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.buttons #signup {
+    color: #333;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    padding: 12px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* heading  */
+.register {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.register h1 {
+    font-size: 2rem;
+}
+
+.register .row {
+    gap: 20px;
+    position: relative;
+    margin: 30px 0;
+}
+
+.row span {
+    position: absolute;
+    top: -10px;
+    padding: 0 5px;
+    margin-left: 10px;
+    background-color: #fff;
+    user-select: none;
+}
+
+.row input {
+    border: 1px solid #1DA1F2;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+.register #register{
+    width: 100%;
+    background-color: #1DA1F2;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.register #register:active{
+    transform: scale(0.9);
+}
+.register p{
+    font-size: 1rem;
+    opacity: 0.9;
+}
+.register p a{
+    color: #1DA1F2;
+    font-size: 1rem;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.row .first-column,.row,.second-column{
+    position: relative;
+}
+.row .fa-solid{
+    position: absolute;
+    top: 30%;
+    right: 5px;
+    cursor: pointer;
+}
+
+

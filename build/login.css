@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d0e3ef;
+}
+
+button,
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav,
+.right-side,
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* header  */
+header {
+    background-image: url(./inline_image_preview.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+/* nav  */
+nav {
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212121;
+    z-index: 1111;
+}
+
+/* leftside nav  */
+nav .left-logo #logo1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* right side nav  */
+nav .right-side,
+.links {
+    gap: 2rem;
+}
+
+.links a,
+.buttons #login {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.buttons #signup {
+    color: #333;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    padding: 12px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* heading  */
+.login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.login h1 {
+    font-size: 2.2rem;
+}
+
+.login p {
+    margin: 10px 0;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.login .form {
+    padding: 10px;
+}
+
+.form i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.form .username,
+.form .password {
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #1DA1F2;
+
+}
+
+.form span {
+    position: absolute;
+    top: 0%;
+    left: 20px;
+    transform: translateY(-50%);
+    user-select: none;
+    pointer-events: none;
+    transition: 0.5s;
+    background-color: #fff;
+    font-size: 0.9rem;
+    padding: 0 5px;
+    letter-spacing: 1px;
+}
+
+
+.form input {
+    width: 80%;
+    font-size: 1rem;
+
+}
+
+.login #forget {
+    text-decoration: underline;
+    color: #7299e7;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.login #log {
+    display: block;
+    background-color: #1DA1F2;
+    padding: 10px 15px;
+    border-radius: 12px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+
+.login #log:active {
+    transform: scale(0.9);
+}
+
+.login #regis {
+    letter-spacing: 0;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+#regis a {
+    font-size: 0.9rem;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #1DA1F2;
+}
+
+/* model  */
+.model {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 1111;
+    display: none;
+}
+
+.model i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #fff;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    z-index: 11111;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-size: 2rem;
+}
+
+.container .row {
+    gap: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.row .second-column {
+    position: relative;
+    margin: 20px 0;
+}
+
+.row span {
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    padding: 0 5px;
+    margin-left: 10px;
+    background-color: #fff;
+    user-select: none;
+}
+
+.row span:last-child {
+    top: 0;
+}
+
+.row input {
+    border: 1px solid #1DA1F2;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#continue {
+    padding: 10px 15px;
+    background-color: #4267B2;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}

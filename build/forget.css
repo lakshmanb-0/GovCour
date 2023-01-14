@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+button,
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+/* model  */
+.model {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 1111;
+}
+
+.model a i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #fff;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    z-index: 11111;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-size: 2rem;
+}
+
+.container .row {
+    gap: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.row .second-column {
+    position: relative;
+    margin: 20px 0;
+}
+
+.row span {
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    padding: 0 5px;
+    margin-left: 10px;
+    background-color: #fff;
+    user-select: none;
+}
+
+.row span:last-child {
+    top: 0;
+}
+
+.row input {
+    border: 1px solid #1DA1F2;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#continue {
+    padding: 10px 15px;
+    background-color: #4267B2;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
